@@ -4,7 +4,7 @@ def super_sum(A):
 		- Halves every even number
 		- Doubles every odd number
 	Returns the sum of all.
-	
+
 	'''
 	
 	total = 0
@@ -16,5 +16,3 @@ def super_sum(A):
 			total += (a * 2)
 
 	return total
-
-
