@@ -16,7 +16,7 @@ def data_type(x):
 		return x / 2
 
 	elif type (x) == str:
-		return "Hello" + " "  + x
+		return "Hello {}". format (x)
 
 	elif type (x) == bool:
 		return "Boolean"
