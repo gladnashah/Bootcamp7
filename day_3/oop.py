@@ -1,20 +1,7 @@
-class Person:
-	#class variable
-	people_count = 0
+from person import Person
+from kenyan import kenyan
 
-	def __init__(self, name, age):
-		#instance variable
-		self.name = name
-		self.age = age
-		Person.people_count +=1
-
-	def __repr__(self):
-		return "<object: {}, {}>".format (self.name, self.age)
-
-	def say_hello (self):
-		return "Hello, i'm {} and {} y/o". format (self.name, self.age)
-
-
+#person.py
 p = Person ('Joe', 23)
 p1 = Person ('Jane', 23)
 p2 = Person ('Mercy', 23)
@@ -35,3 +22,14 @@ for person in b:
 print Person.people_count
 print p2.people_count
 
+#kenyan.py
+
+k = kenyan ('Anne', 23)
+
+k.probe (False)
+
+print "Is {} corrupt? {}".format(k.name, k.is_corrupt())
+
+print k.say_hello()
+
+print k.corrupt
