@@ -29,6 +29,14 @@ c = [(2, 4,3), (5,10,5), (6,20,7), (50,50,87)]
 for i in c:
 	print "x: {}, y: {}, z: {}".format (*i)
 
+f = [(10,20,30), (10,40), (4,5,50)]
+
+for i in f:
+	if len (i) == 2:
+		print "x: {}, y: {}".format (*i)
+	else:
+		print "x: {}, y: {}, z: {}".format (*i)
+
 
 
 
