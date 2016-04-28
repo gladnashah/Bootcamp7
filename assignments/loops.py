@@ -2,22 +2,22 @@ def looped(*args):
 
 	
 	for arg in args:
-		print arg
+		res = "x: {}, y: {}".format(*arg)
 		for a in arg:
-			print a
-			if len (a) == arg:
-				return "x: {}, y: {}".format(*a)
+			if len (a) == 2:
+				res = "x: {}, y: {}".format(*a)
 				
 			else:
-				return "x: {}, y: {}, z: {} ".format(*a)
-				
-				
-		
+				res = "x: {}, y: {}, z: {} ".format(*a)
 			print "I dont know whats happening"
-				
-		
 
-print looped ([(10,20,30), (10,40)], [(4,5,50)])
+	return res
+
+
+				
+				
+					
+print looped ([(10,20,30), (10,40),(4,5,50)])
 
 
 
